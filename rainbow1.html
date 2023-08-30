@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RAINBOW</title>
+    <style>
+    	body {
+    		text-align: center;
+    		margin: 20%;
+    	}
+    	button{
+    		cursor: pointer;
+    		background-color: silver;
+   	    }
+    </style>
+</head>
+<body>
+	<h1>RAINBOW</h1>
+	<button><h2>CLICK ME!</h2></button> 
+    <script>
+    	const btn=document.querySelector('button'); 
+    	const body=document.querySelector('body');
+    	const color=['#cc66ff','#9900cc','#6600cc','#00ff00','#ffff00','orange','#ffff00'];
+    	document.addEventListener('click', function(){ 
+    	const colorIndex=parseInt(Math.random()*color.length);
+    	body.style.backgroundColor=color[colorIndex];
+    });
+</script> 
+</body>
+</html>
